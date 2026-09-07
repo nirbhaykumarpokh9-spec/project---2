@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, lab(49.26% 26.84 54.83), hsl(214, 84%, 40%));
+    background: linear-gradient(135deg, lch(94.15% 0.61 74.63), hwb(220 91% 8%));
     min-height: 100vh;
 
     display: flex;
@@ -44,11 +44,6 @@ body {
 
     transition: transform 0.3s ease,
                 box-shadow 0.3s ease;
-}
-
-.profile-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 
