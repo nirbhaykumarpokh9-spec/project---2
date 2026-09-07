@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, lab(49.26% 26.84 54.83), hsl(214, 84%, 40%));
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-section {
+    width: 90%;
+    max-width: 1100px;
+    text-align: center;
+}
+
+.profile-section h1 {
+    color: #1e3a8a;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+}
+
+.profile-card {
+    background-color: white;
+    width: 30%;
+    min-width: 250px;
+    padding: 30px 20px;
+    border-radius: 15px;
+
+    box-shadow: 0 8px 20px rgba(158, 5, 51, 0.15);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.profile-card img {
+    width: 120px;
+    height: 120px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 5px solid #92d50d;
+
+    margin-bottom: 15px;
+}
+
+
+#nirbhay {
+    color: #0437e0;
+}
+
+#Abhishek {
+    color: #ab4a06e0;
+}
+
+#Sahil {
+    color: #81032f9f;
+}
+
+.profile-card h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+
+.role {
+    color: #0ca325;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.profile-card p {
+    color: #950f27;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+@media (max-width: 800px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-card {
+        width: 90%;
+        max-width: 400px;
+    }
+}
